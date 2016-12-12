@@ -23,6 +23,30 @@ unset file
     alias activate='source env/bin/activate'
 #   atajos para pip
     alias pipInstall='pip install -r requirements.txt'
+#   django atajos
+    alias dj.r='python manage.py runserver 0.0.0.0'
+    alias dj.mkm='python manage.py makemigrations'
+    alias dj.m='python manage.py migrate'
+#   directorios
+    alias ..='cd ..'
+    alias ...='cd ../../'
+    alias .3='cd ../../../'
+    alias .4='cd ../../../../'
+    alias .5='cd ../../../../../'
+    alias .6='cd ../../../../../../'
+    alias c='clear'
+#   goToProjects
+    alias gotoDecipherWeb='cd ~/Projects/decipherweb/'
+    alias gotoMonitorServer='cd ~/Projects/monitor-server/'
+#   vim
+    alias vi='vim'
+    alias svi='sudo vi'
+    alias edit='vim'
+
+#   ALIAS FOR PROJECTS
+#   decipherweb
+    alias decipherUgly='grunt uglify-files --verbose --gruntfile config/grunt.conf.js'
+    alias decipherWork='python manage.py rqworker high default low --worker-class home.asynchandler.CustomWorker'
 
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
 export COCOS_CONSOLE_ROOT=/Applications/Cocos/Cocos2d-x/cocos2d-x-3.10/tools/cocos2d-console/bin
